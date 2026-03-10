@@ -12,5 +12,29 @@
             Adicionar Novo Serviço
         </h1>
     </header>
+    <main>
+        <form action="index.html" method="get">
+            <article>
+                <label>Nome do cliente</label>
+                <input type="text">
+                <label>Rua</label>
+                <input type="text">
+                <label>Número</label>
+                <input type="number" min="0" step="1">
+                <label>Complemento</label>
+                <input type="text">
+                <label>Não tem Complemento</label>
+                <input type="checkbox">
+            </article>
+            <article>
+                <label>Valor do Serviço</label>
+                <input type="number" min="0" step="0.01" >
+                <p>
+                    Utilizar Calculadora de Precificação <a href="#"></a>
+                </p>
+            </article>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
 </body>
 </html>
