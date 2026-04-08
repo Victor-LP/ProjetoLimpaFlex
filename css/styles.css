@@ -1,6 +1,6 @@
 .topbar{
     display:flex;
-    flex-direction: line;
+    flex-direction: row;
     justify-content: space-between;
     background-color: rgb(101, 237, 103);
     align-items: center;
@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: line;
+    flex-direction: row;
     background-color: rgb(101, 237, 103);
     padding: 1%;
 }
