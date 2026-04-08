@@ -3,18 +3,22 @@
     flex-direction: line;
     justify-content: space-between;
     background-color: rgb(101, 237, 103);
+    align-items: center;
+    padding: 1%;
 }
 .topbar img{
     width: 3rem;
     height: 3rem;
 }
 .rodape{
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: line;
+    background-color: rgb(101, 237, 103);
+    padding: 1%;
 }
 .rodape img{
-    width: 100px;
-    height: 100px;
+    width: 3rem;
+    height: 3rem;
 }
