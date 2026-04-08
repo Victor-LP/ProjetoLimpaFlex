@@ -12,12 +12,12 @@
     </header>
     <main>
         <article>
+            <h2>Dados para a precificação</h2>
             <label>Número de quartos</label>
             <input type="number" min="0" step="1">
             <label>Número de banheiros</label>
             <input type="number" min="0" step="1">
-            <pre>
-            <p>Tipo de moradia:</p>    
+            <p>Tipo de moradia:</p>
             <label>
                 <input type="radio" name="moradia" value="casa">
                 Casa
@@ -30,18 +30,19 @@
                 <input type="radio" name="moradia" value="apartamento">
                 Apartamento
             </label>
-            </pre>
-            <pre> 
-            <p>Serviços extras:</p> 
-            <label>Limpeza dentro da geladeira</label> 
-            <input type="checkbox"> 
-            <label>Limpeza de janelas</label> 
-            <input type="checkbox"> 
-            <label>Limpeza de área externa</label> 
-            <input type="checkbox"> 
-            </pre>
+            <p>Serviços extras:</p>
+            <label>Limpeza dentro da geladeira
+                <input type="checkbox">
             </label>
-            <input type="button" value="Simular">
+            <label>Limpeza de janelas
+                <input type="checkbox">
+            </label>
+
+            <label>Limpeza de área externa
+                <input type="checkbox">
+            </label>
+
+            <button type="button" value="Simular">Simular</button>
         </article>
     </main>
 </body>
