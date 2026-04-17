@@ -1,0 +1,29 @@
+.artigo{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-color: #C865A5;
+    border-style: solid;
+    border-radius: 10px;
+    align-items: start;
+    border-width: 3px;
+    padding: 5%;
+    margin: 5%;
+}
+.icon{
+    width: 3rem;
+    height: 3rem;
+}
+.destaque{
+    display:flex;
+    flex-direction: column;
+    align-items: stretch; /* importante */
+}
+.destaque h1{
+    background-color: rgba(231, 165, 1, 0.6); /* 0.6 = transparência */
+    background-image: url('../assets/img/espuma.png');
+    background-blend-mode: soft-light;
+    padding: 5%;
+    margin: 5% 5% 0%;
+    border-radius: 10px;
+}
