@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="css/index.css">
     <title>Página Inicial</title>
 </head>
 <body>
@@ -13,36 +13,87 @@
     <header class="topbar">
         <img src="./assets/img/menu.png" alt="menu"> <!-- Ainda temos que definir o quê fazer no menu (por enquanto, vamos manter o ícone, mas sem o hyperlink) -->
         <p>
-        <time datetime="2026-03-06T14:30">
+        <time datetime="2026-03-06">
             06 de março de 2026
-            <span>
-                14:30
-            </span>
         </time>
         </p>
     </header>
 
-    <main>
-
-        <article> <!-- Cliente 1 -->
-            <img src="./assets/img/pessoa1.png" alt="marina">
-            <h2>Marina Silva</h2>
-            <address><a href="mapa.html">Rua Oscar Freire,1234,Jardins, São Paulo - SP, 01426-000</a></address> <!-- O local é um link para a página do mapa (mas o mapa ainda não está implementado) -->
-            <time datetime="2023-10-28T15:30">
-                28 de outubro de 2023 - 15:30
-            </time>
-        </article>
-        <article> <!-- Cliente 2 -->
-            <img src="./assets/img/pessoa2.png" alt="camila">
-            <h2>Camila Santos</h2>
-            <address><a href="mapa.html">Avenida Paulista,2073, Bela Vista, São Paulo - SP, 01311-300</a></address>
-            <time datetime="2023-10-29T16:00">
-                29 de outubro de 2023 - 16:00
-            </time>
-        </article>
-        <section>
-            <a href="novoservico.html"><img src="./assets/img/plus.png" alt="adicionar"></a>
+    <main class="destaque">
+         <section class="titulo">
+            <h1>
+            Suas Diarias
+            </h1>
+            <a href="novoservico.html">
+                <img src="./assets/img/plus.png" alt="adicionar" class="icon">
+            </a>
         </section>
+        <article class="artigo">
+            <img src="./assets/img/woman.png" alt="marina" class="icon">
+            <h2>Marina Silva</h2>
+            <address><a href="mapa.html">Rua Oscar Freire,1234,Jardins, São Paulo - SP</a></address>
+            <time datetime="2026-3-7T15:30">
+                7 de março de 2026 - 15:30
+            </time>
+            <a href="#">
+                Mais Detalhes sobre a Diaria
+            </a>
+        </article>
+        <article class="artigo"> <!-- Cliente 2 -->
+            <img src="./assets/img/woman.png" alt="camila" class="icon">
+            <h2>Camila Santos</h2>
+            <address><a href="mapa.html">Avenida Paulista,2073, Bela Vista, São Paulo - SP</a></address>
+            <time datetime="2026-3-8T16:00">
+                8 de março de 2026 - 16:00
+            </time>
+            <a href="#">
+                Mais Detalhes sobre a Diaria
+            </a>
+        </article>
+        <article class="artigo"> <!-- Cliente 2 -->
+            <img src="./assets/img/woman.png" alt="camila" class="icon">
+            <h2>Camila Santos</h2>
+            <address><a href="mapa.html">Avenida Paulista,2073, Bela Vista, São Paulo - SP</a></address>
+            <time datetime="2026-3-8T16:00">
+                8 de março de 2026 - 16:00
+            </time>
+            <a href="#">
+                Mais Detalhes sobre a Diaria
+            </a>
+        </article>
+        <article class="artigo"> <!-- Cliente 2 -->
+            <img src="./assets/img/woman.png" alt="camila" class="icon">
+            <h2>Camila Santos</h2>
+            <address><a href="mapa.html">Avenida Paulista,2073, Bela Vista, São Paulo - SP</a></address>
+            <time datetime="2026-3-8T16:00">
+                8 de março de 2026 - 16:00
+            </time>
+            <a href="#">
+                Mais Detalhes sobre a Diaria
+            </a>
+        </article>
+        <article class="artigo"> <!-- Cliente 2 -->
+            <img src="./assets/img/woman.png" alt="camila" class="icon">
+            <h2>Camila Santos</h2>
+            <address><a href="mapa.html">Avenida Paulista,2073, Bela Vista, São Paulo - SP</a></address>
+            <time datetime="2026-3-8T16:00">
+                8 de março de 2026 - 16:00
+            </time>
+            <a href="#">
+                Mais Detalhes sobre a Diaria
+            </a>
+        </article>
+        <article class="artigo"> <!-- Cliente 2 -->
+            <img src="./assets/img/woman.png" alt="camila" class="icon">
+            <h2>Camila Santos</h2>
+            <address><a href="mapa.html">Avenida Paulista,2073, Bela Vista, São Paulo - SP</a></address>
+            <time datetime="2026-3-8T16:00">
+                8 de março de 2026 - 16:00
+            </time>
+            <a href="#">
+                Mais Detalhes sobre a Diaria
+            </a>
+        </article>
 
     </main>
     <footer class="rodape">
