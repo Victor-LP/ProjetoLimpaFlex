@@ -13,42 +13,50 @@
 <body>
     <header class="topbar">
         <a href="novoservico.html"><img src="./assets/img/back.png" alt="voltar"></a>
-        <p> Simulador </p>
+        <h1> Simulador </h1>
     </header>
     <main>
         <section class="retangulo">
         <article>
-            <h2>Dados para a precificação</h2>
-            <label>Número de quartos</label>
-            <input type="number" min="0" step="1">
-            <label>Número de banheiros</label>
-            <input type="number" min="0" step="1">
-            <p>Tipo de moradia:</p>
-            <label>
-                <input type="radio" name="moradia" value="casa">
-                Casa
-            </label>
-            <label>
-                <input type="radio" name="moradia" value="studio">
-                Studio
-            </label>
-            <label>
-                <input type="radio" name="moradia" value="apartamento">
-                Apartamento
-            </label>
-            <p>Serviços extras:</p>
-            <label>Limpeza dentro da geladeira
-                <input type="checkbox">
-            </label>
-            <label>Limpeza de janelas
-                <input type="checkbox">
-            </label>
+            <section class="bloco">
+            <label class="elemento">Número de quartos:</label>
+            <input type="number" class="elemento" min="0" step="1">
+            <label class="elemento">Número de banheiros:</label>
+            <input type="number" class="elemento" min="0" step="1">
+            </section>
 
-            <label>Limpeza de área externa
-                <input type="checkbox">
+            <section class="bloco">
+            <p class="elemento">Tipo de moradia:</p>
+            <label class="opcao">
+            <input type="radio" name="moradia" value="casa">
+            <span>Casa</span>
             </label>
+            <label class="opcao">
+            <input type="radio" name="moradia" value="studio">
+            <span>Studio</span>
+            </label>
+            <label class="opcao">
+            <input type="radio" name="moradia" value="apartamento">
+            <span>Apartamento</span>
+            </label>
+            </section>
 
-            <button type="button" value="Simular">Simular</button>
+            <section class="bloco">
+            <p class="elemento">Serviços extras:</p>
+            <label class="opcao">
+            <input type="checkbox">
+            <span>Limpeza dentro da geladeira</span>
+            </label>
+            <label class="opcao">
+            <input type="checkbox">
+            <span>Limpeza de janelas</span>
+            </label>
+            <label class="opcao">
+            <input type="checkbox">
+            <span>Limpeza de área externa</span>
+            </label>
+            </section>
+            <button type="button" value="Simular" class="elemento" id="simular">Simular</button>
         </article>
         </section>
     </main>
