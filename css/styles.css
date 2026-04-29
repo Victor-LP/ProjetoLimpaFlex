@@ -3,6 +3,14 @@
     --footer-h: 72px;
 }
 
+@font-face {
+  font-family: "MinhaFonte";
+  src: url("assets/fonts/poppins/Poppins-Medium") format("ttf"),
+}
+
+body {
+  font-family: "MinhaFonte", sans-serif;
+}
 .topbar{
     position: fixed;
     top: 0;
