@@ -14,12 +14,6 @@
     width: 3rem;
     height: 3rem;
 }
-/*.destaque{
-    padding-top: calc(var(--header-h) + 1rem);
-    display:flex;
-    flex-direction: column;
-    flex:auto;
-}*/
 .titulo{
     display: flex;
     align-items: center;
@@ -27,7 +21,7 @@
     background-color: rgba(231, 165, 1, 0.6); /* 0.6 = transparência */
     background-image: url('../assets/img/espuma.png');
     background-blend-mode: soft-light;
-    padding: 3%;
+    padding: 1rem;
     border-radius: 10px;
     font-size: 2rem;
 }

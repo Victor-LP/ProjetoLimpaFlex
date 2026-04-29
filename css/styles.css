@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 1%;
+    padding: 0.25rem 0.25rem;
 }
 
 .topbar p{
@@ -34,7 +34,7 @@
     justify-content: space-between;
     flex-direction: row;
     background-color: #c865a5;
-    padding: 3%;
+    padding: 0.25rem 0.25rem;
 }
 .rodape img{
     width: 2rem;
@@ -52,7 +52,7 @@ body {
     flex-direction: column;
 }
 .destaque{
-    padding-top: calc(var(--header-h) + 1%);
+    padding-top: calc(var(--header-h) + 0.25rem);
     display: flex;
     flex-direction: column;
 }
