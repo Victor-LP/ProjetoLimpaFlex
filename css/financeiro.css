@@ -41,7 +41,7 @@
 }
 
 .valor-receber strong {
-    color: #c865a5;
+    color: #E7A501; 
 }
 
 /* --- Parte de Pagamento --- */
@@ -79,6 +79,7 @@
     justify-content: space-between;
     font-size: 1rem;
     color: #555;
+    margin: 0.3rem;
 }
 
 .total-box {
@@ -89,12 +90,22 @@
     border-top: 2px solid rgba(200, 101, 165, 0.2);
     padding-top: 1rem;
     font-size: 1.1rem;
+    margin-bottom: 3rem;
 }
 
 .tag-pendente {
     color: #d9534f; /* Vermelho pra pendência */
     background-color: #fdf2f2;
-    padding: 0.3rem 0.6rem;
+    padding: 0.5rem;
     border-radius: 5px;
     font-size: 0.9rem;
+}
+.botao-pagar{
+    margin: 10;
+    padding: 10;
+    background-color:#DC3DA4;
+    border-style: none;
+    font-size: 1rem;
+    color: white;
+    padding: 0.4rem;
 }

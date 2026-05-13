@@ -64,7 +64,12 @@ body {
     flex-direction: column;
 }
 .destaque{
-    padding-top: calc(var(--header-h) + 0.25rem);
     display: flex;
     flex-direction: column;
+    padding: calc(var(--header-h) + 1.5rem) 1.5rem calc(var(--footer-h) + 1.5rem);
+    gap: 2rem;
+}
+.icon{
+    width: 3rem;
+    height: 3rem;
 }

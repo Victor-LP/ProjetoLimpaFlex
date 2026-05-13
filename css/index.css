@@ -7,8 +7,8 @@
     border-radius: 10px;
     align-items: start;
     border-width: 3px;
-    padding: 5%;
-    margin: 5%;
+    padding: 1.5rem;
+    /*margin: 5%;*/
 }
 .icon{
     width: 3rem;
@@ -18,10 +18,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(231, 165, 1, 0.6); /* 0.6 = transparência */
+    background-color: rgba(139,204,225, 0.6); /* 0.6 = transparência */
     background-image: url('../assets/img/espuma.png');
     background-blend-mode: soft-light;
     padding: 1rem;
-    border-radius: 10px;
     font-size: 2rem;
+    border-radius: 5rem;
 }
