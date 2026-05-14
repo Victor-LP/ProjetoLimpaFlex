@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
     <title>Mapa</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mapa.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script/mapa.js"></script>
 </head>
 <body>
     <header class="topbar">
       <img class="menu-icon" src="./assets/img/menu.png" alt="menu">
       <section class="search-bar">
-        <input type="text" placeholder="Buscar endereço...">
-        <button class="search-btn" type="submit">🔍</button>
+        <input type="text" id="address" placeholder="Digite um endereço">
+        <button class="search-btn" type="button" onclick="buscarEndereco()">🔍</button>
       </section>
     </header>
     <main>
-        <img src="./assets/img/mapa.png" alt="mapa interativo"> 
+        <button class="search-btn" type="button" onclick="buscarEndereco()">🔍</button>
+            <div id="map"></div>
     </main>
     <footer class="rodape">
         <img src="./assets/img/maps-and-flags.png" alt="mapa">
