@@ -30,7 +30,7 @@ async function buscarEndereco() {
   if (marker) {
     map.removeLayer(marker);
   }
-
+  //Mecher dps para adicionar os endereços das patroas no mapa
   marker = L.marker([lat, lon])
     .addTo(map)
     .bindPopup(endereco)
