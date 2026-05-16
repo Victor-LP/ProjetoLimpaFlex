@@ -1,0 +1,100 @@
+.novoservico-main {
+    padding: calc(var(--header-h) + 1.5rem) 1.5rem calc(var(--footer-h) + 1.5rem);
+    gap: 1.5rem;
+}
+ 
+.artigo{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-color: #c865a5;
+    border-style: solid;
+    border-radius: 10px;
+    align-items: start;
+    border-width: 3px;
+    padding: 1.5rem;
+}
+ 
+.form-titulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #c865a5;
+    border-bottom: 2px solid rgba(200, 101, 165, 0.2);
+    padding-bottom: 0.8rem;
+}
+ 
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+ 
+.campo label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+}
+ 
+.campo input[type="text"],
+.campo input[type="number"],
+.campo input[type="datetime-local"] {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 0.6rem 0.9rem;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+ 
+.campo input:focus {
+    border-color: #c865a5;
+    outline: none;
+}
+ 
+.campo-grupo {
+    display: flex;
+    gap: 1rem;
+}
+ 
+.campo-largo {
+    flex: 2;
+}
+ 
+.radio-grupo {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0.3rem 0;
+}
+ 
+.radio-grupo label {
+    font-size: 0.95rem;
+    color: #333;
+    cursor: pointer;
+}
+ 
+.form-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+ 
+.form-card p a {
+    color: #c865a5;
+    font-weight: bold;
+}
+ 
+.botao-salvar {
+    width: 100%;
+    padding: 1rem;
+    background-color: #DC3DA4;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+ 
+.botao-salvar:hover {
+    background-color: #c865a5;
+}
+ 
