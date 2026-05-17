@@ -12,21 +12,23 @@
 </head>
 <body>
     <header class="topbar">
-        <a href="novoservico.html"><img src="./assets/img/back.png" alt="voltar"></a>
+        <a href="novoservico.html"><img src="./assets/img/back.png" alt="voltar" class="logo"></a>
         <h1> Simulador </h1>
     </header>
     <main>
-        <section class="retangulo">
         <article>
+            <h2>
+                Simular Preço
+            </h2>
             <section class="bloco">
-            <label class="elemento">Número de quartos:</label>
+            <h2 class="elemento">Número de quartos:</h2>
             <input type="number" class="elemento" min="0" step="1">
             <label class="elemento">Número de banheiros:</label>
             <input type="number" class="elemento" min="0" step="1">
             </section>
 
             <section class="bloco">
-            <p class="elemento">Tipo de moradia:</p>
+            <h2 class="elemento">Tipo de moradia:</h2>
             <label class="opcao">
             <input type="radio" name="moradia" value="casa">
             <span>Casa</span>
@@ -42,7 +44,8 @@
             </section>
 
             <section class="bloco">
-            <p class="elemento">Serviços extras:</p>
+            <h2 class="elemento">Serviços extras:</h2>
+            <p class="elemento"></p>
             <label class="opcao">
             <input type="checkbox">
             <span>Limpeza dentro da geladeira</span>
@@ -58,7 +61,6 @@
             </section>
             <button type="button" value="Simular" class="elemento" id="simular">Simular</button>
         </article>
-        </section>
     </main>
     <footer class="rodape">
             <a href="mapa.html">

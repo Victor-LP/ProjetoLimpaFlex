@@ -20,3 +20,6 @@
     font-size: 2rem;
     border-radius: 5rem;
 }
+.artigo *{
+    margin: 0.25rem 0 0.25rem 0;
+}
