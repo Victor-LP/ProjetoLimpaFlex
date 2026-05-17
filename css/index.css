@@ -8,11 +8,6 @@
     align-items: start;
     border-width: 3px;
     padding: 1.5rem;
-    /*margin: 5%;*/
-}
-.icon{
-    width: 3rem;
-    height: 3rem;
 }
 .titulo{
     display: flex;
