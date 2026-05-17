@@ -1,6 +1,7 @@
 .novoservico-main {
     padding: calc(var(--header-h) + 1.5rem) 1.5rem calc(var(--footer-h) + 1.5rem);
     gap: 1.5rem;
+    align-items: center;
 }
  
 .artigo{
@@ -13,6 +14,7 @@
     align-items: start;
     border-width: 3px;
     padding: 1.5rem;
+    align-items:stretch;
 }
  
 .form-titulo {
@@ -98,3 +100,20 @@
     background-color: #c865a5;
 }
  
+.campo *{
+    margin: 0.25rem 0 0.25rem 0;
+}
+.simulador a{
+    margin: 0.5rem 0 0.5rem 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.principal{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgba(0,91,119, 0.6);
+    padding-bottom: 0.8rem;
+    margin: 1rem;
+    align-self: center;
+}

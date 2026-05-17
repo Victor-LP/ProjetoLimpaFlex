@@ -14,13 +14,14 @@
         <h1>Adicionar Novo Serviço</h1>
     </header>
     <main class="destaque novoservico-main">
-        <section class="artigo">
-            <h2>
-                Dados do Cliente
-            </h2>
+        <article class="artigo">
+            <h1 class="principal">
+                Cadastrar uma Diária
+            </h1>
             <section>
+                <h2 class="form-titulo">Dados do cliente</h2>
                 <div class="campo">
-                    <h2>Nome do cliente</h2>
+                    <label>Nome do cliente</label>
                     <input type="text" id="nome-cliente" placeholder="Ex: Marina Silva">
                 </div>
                 <div class="campo">
@@ -34,7 +35,7 @@
             <section>
                 <h2 class="form-titulo">Endereço</h2>
                 <div class="campo">
-                    <label for="rua">Rua / Avenida</label>
+                    <h2>Rua / Avenida</h2>
                     <input type="text" id="rua" placeholder="Ex: Avenida Paulista">
                 </div>
                 <div class="campo-grupo">
@@ -42,19 +43,19 @@
                         <label for="numero">Número</label>
                         <input type="number" id="numero" min="0" step="1" placeholder="0">
                     </div>
-                    <div class="campo campo-largo">
+                    <div class="campo">
                         <label for="bairro">Bairro</label>
                         <input type="text" id="bairro" placeholder="Ex: Bela Vista">
                     </div>
                 </div>
                 <div class="campo">
-                    <label>Tem complemento?</label>
+                    <label for="complemento">Tem complemento?</label>
                     <div class="radio-grupo">
                         <label><input type="radio" name="tem-complemento" value="sim"> Sim</label>
                         <label><input type="radio" name="tem-complemento" value="nao" checked> Não</label>
                     </div>
                 </div>
-                <div class="campo" id="campo-complemento" style="display:none">
+                <div class="campo" id="campo-complemento">
                     <label for="complemento">Complemento</label>
                     <input type="text" id="complemento" placeholder="Ex: Apto 42, Bloco B">
                 </div>
@@ -74,10 +75,10 @@
                     <label for="valor">Valor (R$)</label>
                     <input type="number" id="valor" min="0" step="0.01" placeholder="0,00">
                 </div>
-                <p>Com dúvidas para precificar? <a href="calculadora.html">Usar a Calculadora</a></p>
+                <p class="simulador">Com dúvidas para precificar? <a href="calculadora.html">Usar a Calculadora <img src="./assets/img/calculator.png" class="icon" alt="simular preço"></a></p>
             </section>
             <button type="button" class="botao-salvar" id="btn-salvar">Salvar Serviço</button>
-        </section>
+        </article>
     </main>
     <footer class="rodape">
         <a href="mapa.html"><img src="./assets/img/maps-and-flags.png" alt="mapa"></a>
