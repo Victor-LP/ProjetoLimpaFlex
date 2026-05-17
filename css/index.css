@@ -14,8 +14,6 @@
     align-items: center;
     justify-content: space-between;
     background-color: rgba(139,204,225, 0.6); /* 0.6 = transparência */
-    background-image: url('../assets/img/espuma.png');
-    background-blend-mode: soft-light;
     padding: 1rem;
     font-size: 2rem;
     border-radius: 5rem;
