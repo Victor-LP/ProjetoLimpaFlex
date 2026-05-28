@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/novosevico.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <script src="script/novoservico.js"></script>
+    <script src="script/calculadora.js"></script>
     <title>Novo Serviço</title>
 </head>
 <body>
@@ -22,7 +25,7 @@
                 <h2 class="form-titulo">Dados do cliente</h2>
                 <div class="campo">
                     <label>Nome do cliente</label>
-                    <input type="text" id="nome-cliente" placeholder="Ex: Marina Silva">
+                    <input type="text" id="nome-cliente" placeholder="Nome Completo">
                 </div>
                 <div class="campo">
                     <label>Salvar como cliente frequente?</label>
@@ -75,10 +78,46 @@
                     <label for="valor">Valor (R$)</label>
                     <input type="number" id="valor" min="0" step="0.01" placeholder="0,00">
                 </div>
-                <p class="simulador">Com dúvidas para precificar? <a href="calculadora.html">Usar a Calculadora <img src="./assets/img/calculator.png" class="icon" alt="simular preço"></a></p>
+                <p class="simulador">Com dúvidas para precificar? Usar a Calculadora </p>
+                <p class="simulador"><img src="./assets/img/calculator.png" class="icon" alt="simular preço"></p>
             </section>
             <button type="button" class="botao-salvar" id="btn-salvar">Salvar Serviço</button>
         </article>
+        <section class="calculadora-main">
+        <section class="bloco">
+            <h2 class="elemento">Número de quartos:</h2>
+            <input type="number" class="elemento" min="0" step="1">
+            <h2 class="elemento">Número de banheiros:</h2>
+            <input type="number" class="elemento" min="0" step="1">
+            <h2 class="elemento">Tipo de moradia:</h2>
+            <label class="opcao">
+                <input type="radio" name="moradia" value="casa">
+                <span>Casa</span>
+            </label>
+            <label class="opcao">
+                <input type="radio" name="moradia" value="studio">
+                <span>Studio</span>
+            </label>
+            <label class="opcao">
+                <input type="radio" name="moradia" value="apartamento">
+                <span>Apartamento</span>
+            </label>
+            <h2 class="elemento">Serviços extras:</h2>
+            <label class="opcao">
+                <input type="checkbox">
+                <span>Limpeza dentro da geladeira</span>
+            </label>
+            <label class="opcao">
+                <input type="checkbox">
+                <span>Limpeza de janelas</span>
+            </label>
+            <label class="opcao">
+                <input type="checkbox">
+                <span>Limpeza de área externa</span>
+            </label>
+        </section>
+        <button type="button" value="Simular" class="elemento" id="simular">Simular</button>
+        </section>
     </main>
     <footer class="rodape">
         <a href="mapa.html"><img src="./assets/img/maps-and-flags.png" alt="mapa"></a>
