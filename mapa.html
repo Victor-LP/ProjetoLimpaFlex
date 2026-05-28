@@ -3,32 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mapa</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mapa.css">
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="script/mapa.js"></script>
+
+    <script defer src="script/mapa.js"></script>
 </head>
+
 <body>
+
     <header class="topbar">
-      <img src="./assets/img/logo.png" alt="menu" class="logo">
-      <section class="search-bar">
-        <h1>
-          Pesquisar
-        </h1>
-        <input type="text" id="address" placeholder="Digite um endereço">
-        <button class="search-btn" type="button" onclick="buscarEndereco()">🔍</button>
-      </section>
+        <img src="./assets/img/logo.png" alt="logo" class="logo">
+
+        <section class="search-bar">
+            <h1>Pesquisar</h1>
+
+            <input
+                type="text"
+                id="address"
+                placeholder="Digite um endereço"
+            >
+
+            <button
+                class="search-btn"
+                type="button"
+                onclick="buscarEndereco()"
+            >
+                🔍
+            </button>
+        </section>
     </header>
+
     <main>
-            <div id="map"></div>
+        <iframe
+            title="mapa"
+            id="map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </main>
     <footer class="rodape">
-        <a href="mapa.html"><img src="./assets/img/maps-and-flags.png" alt="mapa"></a>
-        <a href="index.html"><img src="./assets/img/home.png" alt="home"></a>
-        <a href="financeiro.html"><img src="./assets/img/dollar-symbol.png" alt="financeiro"></a>
+        <a href="mapa.html">
+            <img src="./assets/img/maps-and-flags.png" alt="mapa">
+        </a>
+
+        <a href="index.html">
+            <img src="./assets/img/home.png" alt="home">
+        </a>
+
+        <a href="financeiro.html">
+            <img src="./assets/img/dollar-symbol.png" alt="financeiro">
+        </a>
     </footer>
 </body>
 </html>

@@ -1,40 +1,54 @@
-let map;
-let marker;
+const mapa = document.getElementById('map');
 
-function mapa() {
-  map = L.map('map').setView([-23.55052, -46.633308], 13);
+function carregarMapa(lat, lon) {
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap'
-  }).addTo(map);
+    const delta = 0.01;
+
+    const bbox =
+        `${lon - delta}%2C${lat - delta}%2C${lon + delta}%2C${lat + delta}`;
+
+    mapa.src =
+        `https://www.openstreetmap.org/export/embed.html?bbox=${bbox}` +
+        `&layer=mapnik` +
+        `&marker=${lat}%2C${lon}`;
 }
+
 async function buscarEndereco() {
-  const endereco = document.getElementById('address').value;
 
-  const response = await fetch(
-    `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(endereco)}`
-  );
+    const input = document.getElementById('address');
+    const endereco = input.value.trim();
 
-  const data = await response.json();
+    if (!endereco) {
+        alert('Digite um endereço');
+        return;
+    }
 
-  if (data.length === 0) {
-    alert('Endereço não encontrado');
-    return;
-  }
+    try {
 
-  const lat = data[0].lat;
-  const lon = data[0].lon;
+        const response = await fetch(
+            `https://nominatim.openstreetmap.org/search?format=jsonv2&q=${encodeURIComponent(endereco)}`
+        );
 
-  map.setView([lat, lon], 16);
+        const dados = await response.json();
 
-  if (marker) {
-    map.removeLayer(marker);
-  }
-  //Mecher dps para adicionar os endereços das patroas no mapa
-  marker = L.marker([lat, lon])
-    .addTo(map)
-    .bindPopup(endereco)
-    .openPopup();
+        if (!dados.length) {
+            alert('Endereço não encontrado');
+            return;
+        }
+
+        const lat = Number(dados[0].lat);
+        const lon = Number(dados[0].lon);
+
+        carregarMapa(lat, lon);
+
+    } catch (erro) {
+
+        console.error(erro);
+        alert('Erro ao buscar endereço');
+
+    }
 }
 
-window.onload = mapa;
+/* mapa inicial */
+
+carregarMapa(-23.55052, -46.633308);
