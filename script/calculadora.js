@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const cadastro =document.querySelector(".artigo");
     const calculadora = document.querySelector(".calculadora-main");
-    const botaoSimular =document.getElementById("simular");
+    const botaoSimular = document.getElementById("simular");
     const campoPreco = document.getElementById("valor");
     const areaCalculadora =document.querySelector(".simulador");
+    const imgCalculadora = document.getElementById("img_calc");
 
     // começa escondendo a calculadora
     calculadora.style.display = "none";
@@ -22,8 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     areaCalculadora.style.cursor = "pointer";
+    imgCalculadora.style.cursor = "pointer";
 
     areaCalculadora.addEventListener(
+        "click",
+        mostrarCalculadora
+    );
+    imgCalculadora.addEventListener(
         "click",
         mostrarCalculadora
     );
